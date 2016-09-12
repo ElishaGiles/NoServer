@@ -1,0 +1,143 @@
+<!-- Cooking -->
+
+<div ng-hide='cookingHidden' class='menu' id='cookBack'>
+
+  <input ng-model="num" type="text" placeholder="Number"/>
+
+  <div>
+            <select ng-model="typeFrom">
+              <option value="teaspoon"> Teaspoon </option>
+              <option value="tablespoon"> Tablespoon </option>
+              <option value="cup"> Cup </option>
+              <option value="fluid ounce"> Fluid Ounce </option>
+              <option value="pint"> Pint </option>
+              <option value="quart"> Quart </option>
+              <option value="gallon"> Gallon </option>
+            </select>
+  </div>
+
+  <div ng-hide='cookingHidden'>
+            <select ng-model="typeTo">
+              <option value="teaspoon"> Teaspoon </option>
+              <option value="tablespoon"> Tablespoon </option>
+              <option value="cup"> Cup </option>
+              <option value="fluid ounce"> Fluid Ounce </option>
+              <option value="pint"> Pint </option>
+              <option value="quart"> Quart </option>
+              <option value="gallon"> Gallon </option>
+            </select>
+  </div>
+  <div>
+    <button ng-click="submitted(num, typeFrom, typeTo)" type="button" name="button"></button>
+  </div>
+      <div>
+        {{ returnValue }}
+      </div>
+</div>
+
+<!-- Currency -->
+
+<div ng-hide='currencyHidden' class='menu' id='currencyBack'>
+
+  <input ng-model="num" type="text" placeholder="Number"/>
+
+  <div>
+            <select ng-model="typeFrom">
+              <option value="penny"> Penny </option>
+              <option value="nickel"> Nickel </option>
+              <option value="dime"> Dime </option>
+              <option value="quarter"> Quarter </option>
+              <option value="halfDollar"> Half Dollar </option>
+              <option value="dollar"> Dollar </option>
+            </select>
+  </div>
+
+  <div ng-hide='currencyHidden'>
+            <select ng-model="typeTo">
+              <option value="penny"> Penny </option>
+              <option value="nickel"> Nickel </option>
+              <option value="dime"> Dime </option>
+              <option value="quarter"> Quarter </option>
+              <option value="halfDollar"> Half Dollar </option>
+              <option value="dollar"> Dollar </option>
+            </select>
+  </div>
+  <div>
+    <button ng-click="submitted(num, typeFrom, typeTo)" type="button" name="button"></button>
+  </div>
+      <div>
+          {{ returnValue }}
+      </div>
+</div>
+
+<!-- Science -->
+
+<div ng-hide="scienceHidden" class='menu' id='scienceBack'>
+
+  <input ng-model="num" type="text" placeholder="Number"/>
+
+  <div>
+            <select ng-model="typeFrom">
+              <option value="ounce"> Ounce </option>
+              <option value="pound"> Pound </option>
+              <option value="stone"> Stone </option>
+              <option value="gram"> Gram </option>
+              <option value="kilogram"> Kilogram </option>
+            </select>
+  </div>
+
+  <div ng-hide="scienceHidden">
+            <select ng-model="typeTo">
+              <option value="ounce"> Ounce </option>
+              <option value="pound"> Pound </option>
+              <option value="stone"> Stone </option>
+              <option value="gram"> Gram </option>
+              <option value="kilogram"> Kilogram </option>
+            </select>
+  </div>
+  <div>
+    <button ng-click="submitted(num, typeFrom, typeTo)" type="button" name="button"></button>
+  </div>
+      <div>
+          {{ returnValue }}
+      </div>
+</div>
+
+<!-- Distance -->
+
+<div ng-hide="distanceHidden" class='menu' id="distanceBack">
+
+  <input ng-model="num" type="text" placeholder="Number"/>
+
+  <div>
+            <select ng-model="typeFrom">
+              <option value="inch"> Inch </option>
+              <option value="feet"> Foot </option>
+              <option value="yard"> Yard </option>
+              <option value="mile"> Mile </option>
+              <option value="millimeter"> Millimeter </option>
+              <option value="centimeter"> Centimeter </option>
+              <option value="meter"> Meter </option>
+              <option value="kilometer"> Kilometer </option>
+            </select>
+ </div>
+
+  <div ng-hide="distanceHidden">
+            <select ng-model="typeTo">
+              <option value="inch"> Inch </option>
+              <option value="feet"> Foot </option>
+              <option value="yard"> Yard </option>
+              <option value="mile"> Mile </option>
+              <option value="millimeter"> Millimeter </option>
+              <option value="centimeter"> Centimeter </option>
+              <option value="meter"> Meter </option>
+              <option value="kilometer"> Kilometer </option>
+            </select>
+  </div>
+  <div>
+    <button ng-click="submitted(num, typeFrom, typeTo)" type="button" name="button"></button>
+  </div>
+      <div>
+          {{returnValue}}
+      </div>
+</div>

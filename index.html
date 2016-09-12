@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="noServer">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>No Server Project</title>
+
+  </head>
+  <body class="homePage" ng-controller="homeController">
+    <header class="header">
+      <h1 class="header-logo" ui-sref="home">The Conversion Factory</h1>
+    </header>
+    <div>
+      <h2 ng-hide='titleHidden'class="welcome">What do you want to convert?</h2>
+    </div>
+
+
+  <section class="menu">
+    <ui-view></ui-view>
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+  <script src="./app.js"></script>
+  <script src="./js/homeController.js"></script>
+  <script src="./js/cookingController.js"></script>
+  <script src="./js/currencyController.js"></script>
+  <script src="./js/scienceController.js"></script>
+  <script src="./js/distanceController.js"></script>
+  <script src="./js/services/conversionService.js"></script>
+  <script src="./js/select-directive.js"></script>
+  <script src="./js/homeDirective.js"></script>
+  </body>
+</html>
