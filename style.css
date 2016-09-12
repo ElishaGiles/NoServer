@@ -5,6 +5,19 @@
   margin: 10px;
 }
 
+.homeBackground {
+  background-image: url('./images/backgroundImages/changing.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  opacity: .5;
+}
+
 .header {
   width: 100vw;
   background: #AFE7E3;
@@ -12,7 +25,7 @@
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 30px;
-  height: 25vh;
+  height: 20vh;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -43,18 +56,16 @@ hr {
     border-width: 1px;
 }
 
-/*.menu {
-  display: flex;
-  justify-content: center;
-  height: 100%;*/
-/*}*/
-
 .titles {
   display: flex;
   justify-content: space-around;
   padding-top: 5px;
   padding-bottom: 15px;
   padding-left: 15px;
+}
+
+h2 {
+  font-size: 20px;
 }
 
 h3 {
@@ -81,23 +92,87 @@ img {
   justify-content: space-around;
 }
 
-#cookingBack {
-  background-image: url('./images/backgroundImages/measureingSpoons.jpeg');
+.button {
+  width: 96px;
+}
+
+.input {
+  width: 96px;
+}
+
+.cookBack {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.cookBackground {
+  background-image: url('./images/backgroundImages/measuringSpoons.jpeg');
   background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: -50px;
+  bottom: 0;
+  left: 0;
+  opacity: .5;
 }
 
-#cookingBack input {
-  height: 10vh !important;
-}
-
-#scienceBack {
+.return {
 
 }
 
-#distanceBack {
-
+.scienceBack {
+  display: flex;
+  justify-content: space-around;
 }
 
-#currencyBack {
+.scienceBackground {
+  background-image: url('./images/backgroundImages/scale.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: -50px;
+  bottom: 0;
+  left: 0;
+  opacity: .5;
+}
 
+.distanceBack {
+  display: flex;
+  justify-content: space-around;
+}
+
+.distanceBackground {
+  background-image: url('./images/backgroundImages/distance.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: -250px;
+  bottom: 0;
+  left: 0;
+  opacity: .5;
+}
+
+.currencyBack {
+  display: flex;
+  justify-content: space-around;
+}
+
+.currencyBackground {
+  background-image: url('./images/backgroundImages/currency.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: -30px;
+  bottom: 0;
+  left: 0;
+  opacity: .5;
 }

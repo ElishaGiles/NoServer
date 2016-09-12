@@ -1,8 +1,10 @@
 <!-- Cooking -->
+<div ng-hide='cookingHidden' >
+<div class='cookBack'>
 
-<div ng-hide='cookingHidden' class='menu' id='cookBack'>
+  <div class="cookBackground"></div>
 
-  <input ng-model="num" type="text" placeholder="Number"/>
+  <input ng-model="num" type="text" placeholder="Number" class="input"/>
 
   <div>
             <select ng-model="typeFrom">
@@ -28,18 +30,22 @@
             </select>
   </div>
   <div>
-    <button ng-click="submitted(num, typeFrom, typeTo)" type="button" name="button"></button>
+    <button ng-click="submitted(num, typeFrom, typeTo)" type="button" name="button" class="button">Submit</button>
   </div>
-      <div>
+</div>
+      <div class="return">
         {{ returnValue }}
       </div>
 </div>
 
 <!-- Currency -->
 
-<div ng-hide='currencyHidden' class='menu' id='currencyBack'>
+<div ng-hide='currencyHidden'>
+<div class='currencyBack'>
 
-  <input ng-model="num" type="text" placeholder="Number"/>
+  <div class="currencyBackground"></div>
+
+  <input ng-model="num" type="text" placeholder="Number" class="input"/>
 
   <div>
             <select ng-model="typeFrom">
@@ -63,8 +69,9 @@
             </select>
   </div>
   <div>
-    <button ng-click="submitted(num, typeFrom, typeTo)" type="button" name="button"></button>
+    <button ng-click="submitted(num, typeFrom, typeTo)" type="button" name="button" class="button">Submit</button>
   </div>
+</div>
       <div>
           {{ returnValue }}
       </div>
@@ -72,9 +79,12 @@
 
 <!-- Science -->
 
-<div ng-hide="scienceHidden" class='menu' id='scienceBack'>
+<div ng-hide="scienceHidden" >
+<div class='scienceBack'>
 
-  <input ng-model="num" type="text" placeholder="Number"/>
+  <div class="scienceBackground"></div>
+
+  <input ng-model="num" type="text" placeholder="Number" class="input"/>
 
   <div>
             <select ng-model="typeFrom">
@@ -96,8 +106,9 @@
             </select>
   </div>
   <div>
-    <button ng-click="submitted(num, typeFrom, typeTo)" type="button" name="button"></button>
+    <button ng-click="submitted(num, typeFrom, typeTo)" type="button" name="button" class="button">Submit</button>
   </div>
+</div>
       <div>
           {{ returnValue }}
       </div>
@@ -105,9 +116,12 @@
 
 <!-- Distance -->
 
-<div ng-hide="distanceHidden" class='menu' id="distanceBack">
+<div ng-hide="distanceHidden" >
+<div class="distanceBack">
 
-  <input ng-model="num" type="text" placeholder="Number"/>
+  <div class="distanceBackground"></div>
+
+  <input ng-model="num" type="text" placeholder="Number" class="input"/>
 
   <div>
             <select ng-model="typeFrom">
@@ -135,8 +149,9 @@
             </select>
   </div>
   <div>
-    <button ng-click="submitted(num, typeFrom, typeTo)" type="button" name="button"></button>
+    <button ng-click="submitted(num, typeFrom, typeTo)" type="button" name="button" class="button">Submit</button>
   </div>
+</div>
       <div>
           {{returnValue}}
       </div>
