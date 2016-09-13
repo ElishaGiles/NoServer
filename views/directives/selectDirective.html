@@ -1,5 +1,11 @@
 <!-- Cooking -->
 <div ng-hide='cookingHidden' >
+
+  <div class="unitFrom">
+      <p class='first'> Unit From </p>
+      <p> Unit To </p>
+  </div>
+
 <div class='cookBack'>
 
   <div class="cookBackground"></div>
@@ -7,7 +13,7 @@
   <input ng-model="num" type="text" placeholder="Number" class="input"/>
 
   <div>
-            <select ng-model="typeFrom">
+            <select ng-model="typeFrom" class='dropDown'>
               <option value="teaspoon"> Teaspoon </option>
               <option value="tablespoon"> Tablespoon </option>
               <option value="cup"> Cup </option>
@@ -19,7 +25,7 @@
   </div>
 
   <div ng-hide='cookingHidden'>
-            <select ng-model="typeTo">
+            <select ng-model="typeTo" class='dropDown'>
               <option value="teaspoon"> Teaspoon </option>
               <option value="tablespoon"> Tablespoon </option>
               <option value="cup"> Cup </option>
@@ -33,14 +39,23 @@
     <button ng-click="submitted(num, typeFrom, typeTo)" type="button" name="button" class="button">Submit</button>
   </div>
 </div>
-      <div class="return">
-        {{ returnValue }}
-      </div>
+  <section class="returnContainer">
+    <div class="return">
+      <p> Your return value is ________ </p>
+      <p class='typeTo'> {{returnValue}} {{typeTo}}s </p>
+    </div>
+  </section>
 </div>
 
 <!-- Currency -->
 
 <div ng-hide='currencyHidden'>
+
+  <div class="unitFrom">
+      <p class='first'> Unit From </p>
+      <p> Unit To </p>
+  </div>
+
 <div class='currencyBack'>
 
   <div class="currencyBackground"></div>
@@ -48,7 +63,7 @@
   <input ng-model="num" type="text" placeholder="Number" class="input"/>
 
   <div>
-            <select ng-model="typeFrom">
+            <select ng-model="typeFrom" class='dropDown'>
               <option value="penny"> Penny </option>
               <option value="nickel"> Nickel </option>
               <option value="dime"> Dime </option>
@@ -59,7 +74,7 @@
   </div>
 
   <div ng-hide='currencyHidden'>
-            <select ng-model="typeTo">
+            <select ng-model="typeTo" class='dropDown'>
               <option value="penny"> Penny </option>
               <option value="nickel"> Nickel </option>
               <option value="dime"> Dime </option>
@@ -72,14 +87,23 @@
     <button ng-click="submitted(num, typeFrom, typeTo)" type="button" name="button" class="button">Submit</button>
   </div>
 </div>
-      <div>
-          {{ returnValue }}
-      </div>
+<section class="returnContainer">
+  <div class="return">
+    <p> Your return value is ________ </p>
+    <p class='typeTo'> {{returnValue}} {{typeTo}}s </p>
+  </div>
+</section>
 </div>
 
 <!-- Science -->
 
 <div ng-hide="scienceHidden" >
+
+  <div class="unitFrom">
+      <p class='first'> Unit From </p>
+      <p> Unit To </p>
+  </div>
+
 <div class='scienceBack'>
 
   <div class="scienceBackground"></div>
@@ -87,7 +111,7 @@
   <input ng-model="num" type="text" placeholder="Number" class="input"/>
 
   <div>
-            <select ng-model="typeFrom">
+            <select ng-model="typeFrom" class='dropDown'>
               <option value="ounce"> Ounce </option>
               <option value="pound"> Pound </option>
               <option value="stone"> Stone </option>
@@ -97,7 +121,7 @@
   </div>
 
   <div ng-hide="scienceHidden">
-            <select ng-model="typeTo">
+            <select ng-model="typeTo" class='dropDown'>
               <option value="ounce"> Ounce </option>
               <option value="pound"> Pound </option>
               <option value="stone"> Stone </option>
@@ -109,14 +133,23 @@
     <button ng-click="submitted(num, typeFrom, typeTo)" type="button" name="button" class="button">Submit</button>
   </div>
 </div>
-      <div>
-          {{ returnValue }}
-      </div>
+<section class="returnContainer">
+  <div class="return">
+    <p> Your return value is ________ </p>
+    <p class='typeTo'> {{returnValue}} {{typeTo}}s </p>
+  </div>
+</section>
 </div>
 
 <!-- Distance -->
 
 <div ng-hide="distanceHidden" >
+
+  <div class="unitFrom">
+      <p class='first'> Unit From </p>
+      <p> Unit To </p>
+  </div>
+  
 <div class="distanceBack">
 
   <div class="distanceBackground"></div>
@@ -124,7 +157,7 @@
   <input ng-model="num" type="text" placeholder="Number" class="input"/>
 
   <div>
-            <select ng-model="typeFrom">
+            <select ng-model="typeFrom" class='dropDown'>
               <option value="inch"> Inch </option>
               <option value="feet"> Foot </option>
               <option value="yard"> Yard </option>
@@ -137,7 +170,7 @@
  </div>
 
   <div ng-hide="distanceHidden">
-            <select ng-model="typeTo">
+            <select ng-model="typeTo" class='dropDown'>
               <option value="inch"> Inch </option>
               <option value="feet"> Foot </option>
               <option value="yard"> Yard </option>
@@ -152,7 +185,10 @@
     <button ng-click="submitted(num, typeFrom, typeTo)" type="button" name="button" class="button">Submit</button>
   </div>
 </div>
-      <div>
-          {{returnValue}}
-      </div>
+<section class="returnContainer">
+  <div class="return">
+    <p> Your return value is ________ </p>
+    <p class='typeTo'> {{returnValue}} {{typeTo}}s </p>
+  </div>
+</section>
 </div>

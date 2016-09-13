@@ -5,7 +5,8 @@ angular.module('noServer').controller('cookingController', function($scope, conv
 
 
 $scope.submitted = function(num, typeFrom, typeTo) {
-  $scope.returnValue = conversionService.outerConversion(num, typeFrom, typeTo)
+  $scope.returnValue = conversionService.outerConversion(num, typeFrom, typeTo);
+  $scope.typeTo = typeTo;
 }
 
 

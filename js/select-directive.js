@@ -43,7 +43,7 @@ angular.module('noServer').directive('selectDirective', function($state) {
         scope.scienceHidden = true;
         scope.distanceHidden = false;
         scope.typeFrom = 'inch';
-        scope.typeTo = 'feet';
+        scope.typeTo = 'centimeter';
 
       }
     }
